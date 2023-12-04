@@ -1,0 +1,20 @@
+version: "3.3"
+
+services:
+  rest-api:
+    image: rest_api:latest
+    container_name: backend_rest
+    restart: always
+    environment:
+      - TZ=Asia/Jakarta
+      - SERVER_PORT=3000
+    ports:
+      - '8080:3000'
+    volumes:
+      - ./uploads:/app/uploads
+    networks:
+      - backend-api
+
+networks:
+  backend-api:
+    driver: bridge
