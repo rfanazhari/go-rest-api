@@ -1,6 +1,6 @@
 # go-rest-api
 simple rest-api with golang implementation clean architecture.
-please also read [Project Layout](https://github.com/golang-standars/project-layout)
+please also read [Project Layout](https://github.com/golang-standards/project-layout)
 
 ## Prerequisites
 
